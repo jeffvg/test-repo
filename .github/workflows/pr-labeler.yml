@@ -9,5 +9,5 @@ permissions:
   pull-requests: write
 
 jobs:
-  PR Labeler:
+  PR_Labeler:
     uses: jeffvg/mui5-react17/.github/workflows/pr-labeler.yml@master
