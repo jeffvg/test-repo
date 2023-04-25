@@ -10,4 +10,4 @@ permissions:
 
 jobs:
   PR Labeler:
-    uses: jeffvg/mui5-react17/blob/master/.github/workflows/pr-labeler.yml@master
+    uses: jeffvg/mui5-react17/.github/workflows/pr-labeler.yml@master
