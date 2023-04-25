@@ -1,0 +1,13 @@
+name: PR Labeler
+
+on:
+  pull_request_target:
+    types:
+      - opened
+
+permissions:
+  pull-requests: write
+
+jobs:
+  PR Labeler:
+    uses: jeffvg/mui5-react17/blob/master/.github/workflows/pr-labeler.yml
