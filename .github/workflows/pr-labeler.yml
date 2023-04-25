@@ -15,4 +15,4 @@ jobs:
     with:
       configuration-path: jeffvg/mui5-react17/blob/master/.github/pr-labeler.yml@master
     secrets:
-      token: ${{ secrets.GITHUB_TOKEN }}
+      repo-token: ${{ secrets.GITHUB_TOKEN }}
