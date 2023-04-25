@@ -12,3 +12,6 @@ permissions:
 jobs:
   pr-labeler:
     uses: jeffvg/mui5-react17/.github/workflows/pr-labeler.yml@master
+    with:
+      configuration-path: .github/pr-labeler.yml
+    secrets: inherit
