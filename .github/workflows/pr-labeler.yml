@@ -13,4 +13,4 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         repository: jeffvg/mui5-react17/.github/workflows/pr-labeler.yml@dev
         event-type: run-workflow
-        client-payload: {}
+        client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
