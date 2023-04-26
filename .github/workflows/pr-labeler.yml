@@ -1,18 +1,19 @@
 name: PR Labeler
 
-on:
-  pull_request_target:
-    types:
-      - opened
-
-permissions:
-  pull-requests: write
-  contents: write
+on: [push, pull_request]
 
 jobs:
-  pr-labeler:
-    uses: jeffvg/mui5-react17/.github/workflows/pr-labeler.yml@dev
-    with:
-      configuration-path: .github/pr-labeler.yml@dev
-    secrets:
-      repo-token: ${{ secrets.GITHUB_TOKEN }}
+  trigger:
+    runs-on: ubuntu-latest
+
+permissions:
+  contents: write
+
+    steps:
+    - name: Trigger reusable workflow
+      uses: peter-evans/repository-dispatch@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        repository: jeffvg/mui5-react17/.github/workflows/pr-labeler.yml@dev
+        event-type: run-workflow
+        client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
