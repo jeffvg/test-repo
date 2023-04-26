@@ -6,9 +6,6 @@ jobs:
   trigger:
     runs-on: ubuntu-latest
 
-permissions:
-  contents: write
-
     steps:
     - name: Trigger reusable workflow
       uses: peter-evans/repository-dispatch@v2
