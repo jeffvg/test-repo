@@ -13,6 +13,6 @@ jobs:
   pr-labeler:
     uses: jeffvg/mui5-react17/.github/workflows/pr-labeler.yml@master
     with:
-      configuration-path: jeffvg/mui5-react17/blob/master/.github/pr-labeler.yml@master
+      configuration-path: jeffvg/mui5-react17/blob/master/.github/pr-labeler.yml@dev
     secrets:
       repo-token: ${{ secrets.GITHUB_TOKEN }}
