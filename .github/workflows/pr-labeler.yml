@@ -12,3 +12,4 @@ permissions:
 jobs:
   pr-labeler:
     uses: jeffvg/workflows/.github/workflows/blui-labeler.yml@dev
+    secrets: inherit
