@@ -1,4 +1,4 @@
-name: PR Labeler
+name: blui-labeler
 
 on:
   pull_request_target:
@@ -11,4 +11,4 @@ permissions:
 
 jobs:
   pr-labeler:
-    uses: jeffvg/workflows/.github/workflows/pr-labeler.yml@dev
+    uses: jeffvg/workflows/.github/workflows/blui-labeler.yml@dev
